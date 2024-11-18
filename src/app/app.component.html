@@ -1,0 +1,9 @@
+
+  <main
+    *ngIf="!loading"
+    class="mt-xs-5 mt-md-0"
+    [ngClass]="{ 'dash-main pb-0': !isExtranet && isSystemAdmin}"
+  >
+  <router-outlet class="overflow-hidden"></router-outlet>
+    <app-site-footer *ngIf="isExtranet || !isSystemAdmin" [isExtranet]="isExtranet" class="overflow-hidden"></app-site-footer>
+  </main>

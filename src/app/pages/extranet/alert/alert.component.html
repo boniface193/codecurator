@@ -1,0 +1,17 @@
+<div class="modal-content">
+    <div class="modal-header text-center">
+        <h5 class="modal-title text-center w-100 py-1"><strong>{{title}}</strong></h5>
+    </div>
+    <div class="modal-body px-lg-4 py-lg-4 text-center fs-15">
+
+        <ng-lottie *ngIf="true" containerClass="mx-auto" [options]="{path: lottieIconPath, autoplay: true, loop:false}" width="120px"
+            height="120px"></ng-lottie>
+        <div class="mb-3">{{message}}</div>
+
+        <div class="text-center mt-4">
+            <button *ngIf="showCloseButton" (click)="close()" class="btn btn-outline-danger mx-1" data-bs-dismiss="modal">Close</button>
+            <button *ngIf="showConfirmButton" (click)="confirm()" class="btn btn-primary mx-2"
+                data-bs-dismiss="modal">{{confirmText}} <span class="iconify icon" data-icon="ic:twotone-check"></span></button>
+        </div>
+    </div>
+</div>

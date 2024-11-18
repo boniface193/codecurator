@@ -1,0 +1,165 @@
+<div class="graphik-font">
+  <header>
+    <div>
+      <nav  class="navbar navbar-expand-lg fixed-top" [ngClass]="{ 'navbar-scrolled': isScrolled }" >
+        <div class="container">
+          <a class="navbar-brand" href="#"
+          ><img [src]="logoSrc" class="img-fluid" alt="" width="130"
+          /></a>
+          <button
+            class="navbar-toggler  "
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="iconify fs-3" data-icon="ci:menu-alt-01"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll" >
+            <ul
+              class="navbar-nav mx-auto my-2 my-lg-0 navbar-nav-scroll"
+              style="--bs-scroll-height: 100px"
+            >
+              <li class="nav-item">
+                <a
+                  [ngClass]="{'active-extranet': activeSection === ''}"
+                  class="nav-link  px-5 py-1 fw-normal font-family-secondary"
+                  aria-current="page"
+                  href="#"
+                >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a [ngClass]="{'active-extranet': activeSection === 'about'}" class="nav-link px-5 py-1 fw-normal font-family-secondary " href="#about"
+                >About Us</a
+                >
+              </li>
+              <!--            <li class="nav-item">-->
+              <!--              <a class="nav-link px-5 py-1 fw-normal font-family-secondary" href="#subscription"-->
+              <!--                >Subscription-->
+              <!--              </a>-->
+              <!--            </li>-->
+              <li class="nav-item">
+                <a [ngClass]="{'active-extranet': activeSection === 'contact-us'}" class="nav-link px-5 py-1 fw-normal font-family-secondary" routerLink="contact-us">
+                  Contact Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a [ngClass]="{'active-extranet': activeSection === 'dev-request'}" class="nav-link px-5 py-1 fw-normal font-family-secondary" routerLink="/dev-request">
+                  Join Us</a
+                >
+              </li>
+            </ul>
+            <div class="d-flex">
+              <!--            <div class="dropdown">-->
+              <!--              <button-->
+              <!--                class="btn btn-outline-light bg-transparent me-2 border-0 dropdown-toggle"-->
+              <!--                type="button"-->
+              <!--                data-bs-toggle="dropdown"-->
+              <!--                aria-expanded="false"-->
+              <!--              >-->
+              <!--                <span class="iconify" data-icon="mdi:web"></span> EN-->
+              <!--              </button>-->
+              <!--              <ul class="dropdown-menu pt-0">-->
+              <!--                <li><a class="dropdown-item" href="#">EN</a></li>-->
+              <!--                <li><a class="dropdown-item" href="#">FR</a></li>-->
+              <!--                <li><a class="dropdown-item" href="#">ES</a></li>-->
+              <!--              </ul>-->
+              <!--            </div>-->
+
+              <!-- <button class="btn btn-outline-light px-4 me-2">Sign In</button> -->
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="contactBg">
+      <div class="container">
+        <div class="row pt-5">
+          <div class="pt-5 formCard">
+            <div class="mt-5 d-md-flex justify-content-between">
+              <div class="col-md-6 col-12">
+                <p class="my-3 small text-light">Contact Us</p>
+                <h1 class="text-light" style="font-size: 3rem">Get In Touch</h1>
+
+                <p class="text-light paragraph">
+                  Feel free to reach out to us with any questions, inquiries, or feedback you may have. Our dedicated team is ready to assist you and provide the support you need. We strive to respond to all inquiries promptly to ensure a positive experience for our valued users.
+                </p>
+
+                <div class="mt-5">
+                  <div class="d-flex mb-5">
+                    <span class="iconify fs-3 text-light me-2" data-icon="carbon:email"></span>
+                    <div>
+                      <p class="text-light fw-bold">Email</p>
+                      <p class="fs-14 text-light opacity-50">Codecurator@protonmail.com</p>
+                    </div>
+                  </div>
+                  <div class="d-flex mb-5">
+                    <span class="iconify fs-3 text-light me-2" data-icon="mdi:map-marker"></span>
+                    <div>
+                      <p class="text-light fw-bold">Address</p>
+                      <p class="fs-14 text-light opacity-50">5813 Tenth Line West, Mississauga, Ontario, Canada</p>
+                    </div>
+                  </div>
+                  <div class="d-flex mb-5">
+                    <span class="iconify fs-3 text-light me-2" data-icon="mdi:phone"></span>
+                    <div>
+                      <p class="text-light fw-bold">Phone</p>
+                      <p class="fs-14 text-light opacity-50">+(1) 289-719-1700</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-12 px-md-4 mt-5 mt-md-0">
+                <div class="card p-lg-5 p-3 rounded-2">
+                  <p class="fw-bold">Get In Touch With Us</p>
+                  <div class="mt-5">
+                    <form [formGroup]="form">
+                      <div class="row">
+                        <div class="col">
+                          <label for="" class="form-label required">Name</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Name"
+                            aria-label="Name"
+                            formControlName="name"
+                          />
+                          <error-message [form]="form" [label]="'Name'" [controlName]="'name'" [singularError]="true">
+
+                          </error-message>
+                        </div>
+                      </div>
+                      <div class="col mt-5">
+                        <label for="" class="form-label required">How can we help? </label>
+                        <textarea
+                          type="text"
+                          class="form-control"
+                          rows="5"
+                          placeholder="Your Message"
+                          formControlName="message"
+
+                        >
+                        </textarea>
+                        <error-message [form]="form" [label]="'Message'" [controlName]="'message'" [singularError]="true">
+
+                        </error-message>
+                      </div>
+                      <div class="mt-5">
+                        <button (click)="sendEmail()"  class="btn btn-primary px-5">Send Message</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>

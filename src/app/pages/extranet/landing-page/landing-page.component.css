@@ -1,0 +1,524 @@
+/*.bg-img-cadence{*/
+/*    background-image: url("C:/Users/BYTEWORKS/ecadence-frontend/ecadence/src/assets/img/hero_bg.png");*/
+/*    background-position: center;*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+/*    */
+/*  }*/
+
+html,
+body {
+  font-family: Inter;
+  font-size: 16px !important;
+  background-color: #2F3743;
+}
+
+.btn {
+  font-family: Inter;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px 20px;
+  gap: 0.5rem;
+
+  border-radius: 2px;
+
+  text-align: center;
+
+  font-weight: 500;
+  font-size: 14px;
+
+  outline: none !important;
+  --bs-btn-active-border-color: transparent;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: Inter;
+  font-weight: bold;
+  color: var(--header-color);
+}
+
+.section_dark_bg {
+  /* background-color: #060408; */
+  background-color: #2F3743;
+}
+
+@media (min-width: 961px) {
+
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  .section_dark_bg {
+    background-color: #2F3743;
+    overflow: hidden;
+    padding-bottom: 80px;
+  }
+}
+
+.visualise {
+  background-color: #060408;
+}
+
+.page_supp {
+  background-color: #060408;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.paragraph {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5625rem;
+  text-align: justify;
+}
+
+/* New Css frontier */
+.card_feat {
+  border-radius: 0.625rem;
+  background: rgba(217, 217, 217, 0.55);
+}
+
+.nav-link.active-extranet {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 40px !important;
+}
+
+.nav-item {
+  margin-left: 0.625rem;
+  margin-right: 0.625rem;
+}
+
+.navbar {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand img {
+  display: block !important;
+  max-width: 100% !important;
+}
+
+.navbar.navbar-scrolled {
+  background-color: #f5f5f5;
+  /* Set the desired background color for the scrolled state */
+  transition: background-color 0.3s ease-in-out;
+  /* Add a transition effect for a smooth color change */
+}
+
+.navbar-collapse.show {
+  background-color: #FFFFFE !important;
+  padding: 1rem;
+  transition: background-color 0.1s ease-in-out;
+  /* Add a transition effect for a smooth color change */
+  margin-top: 15px;
+  border-radius: 4px;
+
+}
+
+.navbar-collapse.show .navbar-nav a.nav-link {
+  color: #000 !important;
+  /* Link color on collapse show */
+}
+
+.navbar-collapse.show .navbar-nav button.dropdown.btn-outline-light {
+  color: #000 !important;
+  /* Link color on scroll */
+}
+
+.navbar-collapse.show .navbar-nav a.nav-link.active-extranet {
+  background-color: rgba(0, 0, 0, 20%) !important;
+  border-radius: 40px !important;
+}
+
+.navbar-collapse.show .navbar-nav a.nav-link {
+  /*background-color: rgba(0, 0, 0, 20%) !important;*/
+  border-radius: 40px !important;
+}
+
+p {
+  font-size: 16px !important;
+}
+
+.navbar-scrolled .navbar-nav a.nav-link {
+  color: #000000 !important;
+  /* Link color on scroll */
+}
+
+.navbar-scrolled .navbar-nav button.dropdown.btn-outline-light {
+  color: #000000 !important;
+  /* Link color on scroll */
+}
+
+.navbar-scrolled .navbar-nav a.nav-link.active-extranet {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 40px !important;
+}
+
+.navbar-scrolled .navbar-nav a.nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 40px !important;
+}
+
+.navbar-toggler {
+  border-color: rgb(248, 249, 250);
+  color: rgb(248, 249, 250);
+}
+
+.navbar-scrolled .navbar-toggler {
+  border-color: #0B0B16;
+  color: #0B0B16;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+}
+
+.image-container img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-stream-container {
+  position: relative;
+  width: 100%;
+  height: 10rem;
+  /* Adjust height to fit both text streams */
+  overflow: hidden;
+  /* Hide overflow to maintain the illusion */
+}
+
+.text-stream {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  /* Cover half of the container */
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  transition: transform 0.5s linear;
+  /* Smooth transition for hover effect */
+}
+
+.top-stream {
+  animation: scroll-left 30s linear infinite;
+}
+
+.bottom-stream {
+  bottom: 0;
+  animation: scroll-right 30s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.top-stream:hover {
+  animation-play-state: paused;
+  /* Pause only the top stream animation on hover */
+}
+
+.bottom-stream:hover {
+  animation-play-state: paused;
+  /* Pause only the bottom stream animation on hover */
+}
+
+.text-stream span {
+  padding-right: 2.5rem;
+  /* Adjust spacing between items */
+  font-size: 1.5rem;
+  /* Adjust font size as needed */
+  transition: color 0.3s ease, background-color 0.3s ease, padding 0.3s ease;
+  /* Smooth transition for hover effect */
+}
+
+.text-stream span:hover {
+  color: #98ff98 !important;
+  /* Light green background with some transparency */
+  padding: 0 1rem;
+  /* Adjust padding to fit the highlighted background */
+  cursor: pointer;
+}
+
+
+
+/*
+*
+*
+*
+*
+*
+ updated code from Ikechukwu start here 
+ *
+ *
+ *
+ */
+
+.outside-view_2-2 {
+  padding: 80px;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  background: #222831;
+}
+
+.text-your-modern-online-school_8-68 {
+  color: #ffffff;
+  font-size: 96px;
+  font-family: Inter;
+  letter-spacing: -5%;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: left;
+  width: 645px;
+  height: 220px;
+}
+
+.text-new-school-is-an-aggregator-of-multimedia-educational-materials-from-around-the-world-_8-82 {
+  color: #adabab;
+  font-size: 17px;
+  font-family: Inter;
+  line-height: 122.02116250991821%;
+  letter-spacing: 0%;
+  text-decoration: none;
+  font-weight: 500;
+  text-align: left;
+  width: 451px;
+  height: 53px;
+  margin: 25px 0;
+}
+
+.registration_8-102 {
+  position: relative;
+  cursor: pointer;
+  margin: 40px 0;
+}
+
+.rectangle-14_8-103 {
+  display: flex;
+  align-items: center;
+  width: 179px;
+  height: 29px;
+  text-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+.text-registration_8-104 {
+  color: #ffffff;
+  font-size: 24px;
+  font-family: Segoe UI;
+  line-height: 122.02116250991821%;
+  letter-spacing: 2%;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Add hover effect for the SVG */
+.rectangle-14_8-103 svg {
+  transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+/* Hover state */
+.rectangle-14_8-103:hover {
+  /* Change to a lighter blue color */
+  transform: scale(1.09);
+  /* Slightly increase size on hover */
+}
+
+/* Optional: Add hover effect for the text */
+.text-registration_8-104 {
+  transition: color 0.3s ease;
+}
+
+.rectangle-14_8-103:hover .text-registration_8-104 {
+  color: inherit;
+  /* Change text color on hover */
+}
+
+.x-2l_4-63 {
+  top: 507px;
+  left: 288px;
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+  width: 221px;
+  height: 537px;
+  box-shadow:
+    -19px 7px 33.599998474121094px 0px #0808084f,
+    -5px 4px 40.099998474121094px 0px #0000003f inset;
+}
+
+.rectangle-12_4-49 {
+  width: 221px;
+  height: 247px;
+  display: flex;
+  position: absolute;
+  bottom: 21rem;
+}
+
+.group-3_4-44 {
+  width: 422px;
+  height: 637px;
+  position: relative;
+}
+
+.rectangle-4_4-36 {
+  display: flex;
+}
+
+.x-1h_4-53 {
+  top: 18px;
+  left: 30px;
+  position: absolute;
+  overflow: hidden;
+  display: flex;
+  width: 221px;
+  height: 668px;
+  box-shadow:
+    -19px 7px 33.599998474121094px 0px #0808084f,
+    -5px 4px 40.099998474121094px 0px #0000003f inset;
+}
+
+.x-1h_4-51 {
+  top: -101px;
+  left: 288px;
+  position: absolute;
+  overflow: hidden;
+  display: flex;
+  width: 221px;
+  height: 596px;
+  box-shadow:
+    -19px 7px 33.599998474121094px 0px #0808084f,
+    -5px 4px 40.099998474121094px 0px #0000003f inset;
+}
+
+.rectangle-10_4-46 {
+  width: 221px;
+  height: 627px;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+}
+
+.group-4_4-45 {
+  width: 837px;
+  height: 668px;
+}
+
+.rectangle-7_4-41 {
+  display: flex;
+}
+
+.x-3h_4-66 {
+  top: 18px;
+  left: 550px;
+  position: absolute;
+  overflow: hidden;
+  display: flex;
+  width: 221px;
+  height: 668px;
+  box-shadow:
+    -19px 7px 33.599998474121094px 0px #0808084f,
+    -5px 4px 40.099998474121094px 0px #0000003f inset;
+}
+
+.ellipse-1_8-174 {
+  bottom: 0;
+  left: 229px;
+  position: absolute;
+  display: flex;
+  display: flex;
+}
+
+.ellipse-2_8-175 {
+  top: 0;
+  left: 528px;
+  position: absolute;
+  display: flex;
+  display: flex;
+}
+
+.ellipse-3_8-176 {
+  bottom: 0;
+  left: 522px;
+  position: absolute;
+  display: flex;
+  display: flex;
+}
+
+@media (max-width: 992px) {
+  .text-your-modern-online-school_8-68 {
+    color: #ffffff;
+    font-size: 56px;
+    font-family: Inter;
+    letter-spacing: -5%;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .outside-view_2-2 {
+    padding: 80px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text-new-school-is-an-aggregator-of-multimedia-educational-materials-from-around-the-world-_8-82 {
+    font-size: 17px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .logo {
+    text-align: center;
+  }
+
+  .rectangle-14_8-103 {
+    width: 100%;
+    height: 100%;
+  }
+
+}

@@ -1,0 +1,19 @@
+<div id="saveSuccess" tabindex="-1" aria-hidden="true">
+  <div>
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h5 class="modal-title text-center w-100 py-1" ><strong>Success</strong></h5>
+        <!-- <button type="button" class="btn-close me-lg-2" data-bs-dismiss="modal" aria-label="Close"><span class="iconify" data-icon="eva:close-fill"></span></button> -->
+      </div>
+      <div class="modal-body px-lg-4 py-lg-4 text-center fs-15">
+        <ng-lottie containerClass="mx-auto" [options]="{path: lottieIconPath, autoplay: true, loop:false}" width="120px"
+                   height="120px"></ng-lottie>
+        <div class="mb-3">You have successfully saved your changes. {{additionalMsg}}</div>
+
+        <div class="text-center mt-4">
+          <button (click)="close()" class="btn btn-primary mx-2" data-bs-dismiss="modal">Ok</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

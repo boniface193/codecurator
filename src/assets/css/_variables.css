@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root {
+  --font-family-primary: 'Roboto', Arial, Helvetica, sans-serif;
+  --font-family-secondary: 'Nunito', Arial, Helvetica, sans-serif;
+  --font-family-tertiary: 'Poppins', sans-serif;
+
+  --text-color: #4d4d4d;
+  --header-color: #000000;
+
+    --primary-text-color: #201F24;
+    --primary-color: #201F24;
+    --danger-color: #D62B2B;
+    --primary-deep-color: #2d48bc;
+
+  --primary-text-color: #126bef;
+
+  --link-color: #416bef;
+  --link-color-hover: #126bef;
+
+    --intranet-body-bg: #F8F8F8;
+
+
+      --green: #4FA129;
+  --hero-dark: #201F24;
+  --text-secondary: #4c5775;
+  --text-dim: #aeaeae;
+  --background-color: #f2f7ff;
+  --bs-blue: #416BEF;
+  --bs-blue-50: #0d6efd50;
+  --bs-blue-25: #0d6efd25;
+  --bs-link-hover-color: #0a58ca;
+  --so-white: #ffffff;
+  --so-black: #292e47;
+  --so-black-hover: #272b40;
+  --text-black: #292e47;
+  --white: #fff;
+  --bg-color: #f2f7ff;
+  --dark: #121C52;
+  --yellow: #FAA821;
+  --bad: #fb3d3d;
+}

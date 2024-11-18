@@ -1,0 +1,181 @@
+<section class="overflow-hidden">
+  <div class="row">
+    <div style="background-color:#060408" class="col-md-6 py-5">
+      <div class="row row-cols-xl-2 row-cols-1 gx-md-5 ps-0">
+        <div class="col-xl-8 col-12 p-md-5 p-3">
+          <div class="p-md-4 p-2">
+            <h1 class="text-light" style="font-size: 3.2rem">
+              <
+              Codecurator
+              />
+            </h1>
+
+            <p class="text-light my-3">Empower your career with Code Curator. Submit your request today to join our team of talented developers and start creating custom websites, web applications, or mobile apps tailored to our clients' needs.</p>
+
+            <div class="my-3 d-flex justify-content-start align-items-center">
+              <div class="text-center">
+                <ng-lottie
+                  containerClass="mx-auto"
+                  [options]="{ path: 'assets/lottie/code.json', autoplay: true, loop: false }"
+                  width="75%"
+                  height="100%"
+                ></ng-lottie>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 bg-white py-5">
+      <div  class="card border-3 m-auto py-5" style="box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); max-width: 450px">
+
+        <div class="d-flex mb-2">
+    <span
+      class="iconify me-2"
+      data-icon="clarity:warning-alt-filled"
+      style="font-size: 24px"
+    ></span>
+          {{ getErrorMessage() }}
+        </div>
+        <div style="min-height: 400px !important;" class="card-body">
+          <h2 class="mb-4">Join Our Team</h2>
+          <form [formGroup]="form" class="text-start">
+            <div class="row gy-3 gx-2">
+              <div class="col-6">
+                <label for="" class="form-label required">First Name</label>
+                                          <input
+                                            type="text"
+                                            class="form-control"
+                                            placeholder="Enter First Name"
+                                            aria-label="Name"
+                                            formControlName="firstName"
+                                          />
+
+                <error-message
+                  style="display: inline"
+                  [form]="form"
+                  [controlName]="'firstName'"
+                  [label]="'First Name'"
+                ></error-message>
+
+              </div>
+              <div class="col-6">
+                <label for="" class="form-label required">Last Name</label>
+                                          <input
+                                            type="text"
+                                            class="form-control"
+                                            placeholder="Enter Last Name"
+                                            aria-label="Name"
+                                            formControlName="lastName"
+                                          />
+
+                <error-message
+                  style="display: inline"
+                  [form]="form"
+                  [controlName]="'lastName'"
+                  [label]="'Last Name'"
+                ></error-message>
+
+              </div>
+              <div class="col">
+                <div class="form-group mb-3">
+                  <label>Email Address</label>
+                  <input formControlName="email" type="text" class="form-control" placeholder="Enter Email Address">
+                  <error-message
+                    [form]="form" [label]="'Email'" [controlName]="'email'" [singularError]="true"></error-message>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <label for="" class="form-label required">Portfolio Link/GitHub</label>
+                                          <input
+                                            type="text"
+                                            class="form-control"
+                                            placeholder="https://github.com/username"
+                                            aria-label="Name"
+                                            formControlName="link"
+                                          />
+
+                <error-message
+                  style="display: inline"
+                  [form]="form"
+                  [controlName]="'link'"
+                  [label]="'Link'"
+                ></error-message>
+
+              </div>
+
+              <div class="col-12">
+                <label for="" class="form-label required">Skills/Technical Stack</label>
+                                          <input
+                                            type="text"
+                                            class="form-control"
+                                            placeholder="Java, Python..."
+                                            aria-label="Name"
+                                            formControlName="stack"
+                                          />
+
+                <error-message
+                  style="display: inline"
+                  [form]="form"
+                  [controlName]="'stack'"
+                  [label]="'Skills'"
+                ></error-message>
+
+              </div>
+              <div class="col-12">
+                <label for="" class="form-label required">Compose Message? </label>
+                                        <textarea
+                                          type="text"
+                                          class="form-control"
+                                          rows="12"
+                                          placeholder="Your Message"
+                                          formControlName="message"
+
+                                        >
+                                        </textarea>
+                <error-message
+                  style="display: inline"
+                  [form]="form"
+                  [controlName]="'message'"
+                  [label]="'Message'"
+                ></error-message>
+
+              </div>
+            </div>
+          </form>
+          <div class="mt-5 d-flex justify-content-end">
+                                    <button [disabled]="sending" (click)="sendEmail()"  class="btn btn-primary px-5"> <ng-container *ngIf="sending"><span><span class="iconify" data-icon="eos-icons:loading"></span></span></ng-container>Apply</button>
+                                  </div>
+        </div>
+      </div>
+
+      <svg
+        *ngIf="false"
+        class="mx-auto my-4"
+        fill="none"
+        height="21"
+        viewBox="0 0 137 21"
+        width="137"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M66.2302 12.7128C66.2302 13.3569 66.3748 13.9357 66.6642 14.4491C66.9629 14.9532 67.3643 15.3499 67.8684 15.6393C68.3725 15.9287 68.9373 16.0734 69.5627 16.0734C70.1975 16.0734 70.7622 15.9287 71.257 15.6393C71.7611 15.3499 72.1578 14.9532 72.4472 14.4491C72.7459 13.9357 72.8952 13.3569 72.8952 12.7128C72.8952 12.0594 72.7459 11.4806 72.4472 10.9765C72.1578 10.4725 71.7611 10.0757 71.257 9.78635C70.7622 9.49697 70.1975 9.35228 69.5627 9.35228C68.9373 9.35228 68.3725 9.49697 67.8684 9.78635C67.3643 10.0757 66.9629 10.4725 66.6642 10.9765C66.3748 11.4806 66.2302 12.0594 66.2302 12.7128ZM67.3643 12.7128C67.3643 12.2648 67.4577 11.868 67.6444 11.5226C67.8404 11.1679 68.1018 10.8925 68.4285 10.6965C68.7646 10.5005 69.1426 10.4024 69.5627 10.4024C69.9828 10.4024 70.3562 10.5005 70.6829 10.6965C71.0189 10.8925 71.2803 11.1679 71.467 11.5226C71.663 11.868 71.7611 12.2648 71.7611 12.7128C71.7611 13.1609 71.663 13.5576 71.467 13.903C71.2803 14.2484 71.0189 14.5238 70.6829 14.7292C70.3562 14.9252 69.9828 15.0232 69.5627 15.0232C69.1426 15.0232 68.7646 14.9252 68.4285 14.7292C68.1018 14.5238 67.8404 14.2484 67.6444 13.903C67.4577 13.5576 67.3643 13.1609 67.3643 12.7128ZM75.5543 9.4923H74.4341V15.9333H75.5543V9.4923ZM77.5006 10.7245L78.1167 9.80035C77.9486 9.62299 77.7619 9.5063 77.5566 9.45029C77.3605 9.38495 77.1458 9.35228 76.9125 9.35228C76.6138 9.35228 76.3197 9.46896 76.0303 9.70233C75.7409 9.93571 75.5029 10.2531 75.3162 10.6545C75.1389 11.0466 75.0502 11.4993 75.0502 12.0127H75.5543C75.5543 11.7047 75.5823 11.4293 75.6383 11.1866C75.7036 10.9439 75.8156 10.7525 75.9743 10.6125C76.133 10.4725 76.3524 10.4024 76.6324 10.4024C76.8191 10.4024 76.9732 10.4305 77.0945 10.4865C77.2159 10.5331 77.3512 10.6125 77.5006 10.7245Z"
+          fill="#1F3041"
+          opacity="0.6"
+        />
+        <path d="M87.9337 11.9333H136.786" stroke="black" stroke-opacity="0.2" stroke-width="0.5" />
+        <path
+          d="M0 11.9333H48.852"
+          opacity="0.3"
+          stroke="black"
+          stroke-opacity="0.4"
+          stroke-width="0.5"
+        />
+      </svg>
+    </div>
+  </div>
+
+</section>
