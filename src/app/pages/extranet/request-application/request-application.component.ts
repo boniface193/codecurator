@@ -11,7 +11,7 @@ import { environment } from "../../../../environments/environment";
   templateUrl: './request-application.component.html',
   styleUrls: ['./request-application.component.css']
 })
-export class RequestApplicationComponent implements OnInit{
+export class RequestApplicationComponent implements OnInit {
   form: FormGroup;
   activeSection = "";
   sending = false;
@@ -22,7 +22,7 @@ export class RequestApplicationComponent implements OnInit{
     private fb: FormBuilder,
     private router: Router,
     private bsModalService: BsModalService
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     this.initForm();
@@ -116,7 +116,7 @@ export class RequestApplicationComponent implements OnInit{
       });
   }
 
-  successModal(){
+  successModal() {
     const bsModalRef = this.bsModalService.show(AlertComponent, {
       initialState: {
         title: 'Success',

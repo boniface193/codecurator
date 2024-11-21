@@ -38,11 +38,9 @@ body {
 .accordion-header{
   font-family: var(--font-family-tertiary);
 }
-.contactBg {
-  background-image: url(/assets/img/developer.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+
+.visualise {
+  background-color: #060408;
   height: 100vh;
 }
 
@@ -64,9 +62,6 @@ body {
     padding-bottom: 1.25rem;
     color: #fff;
     text-align: center;
-  }
-  .formCard {
-    margin-top: 1rem !important;
   }
 }
 
@@ -94,9 +89,6 @@ body {
     color: #fff;
     text-align: center;
   }
-  .formCard {
-    margin-top: 10rem !important;
-  }
 }
 @media (min-width: 1025px) {
   /* big landscape tablets, laptops, and desktops */
@@ -105,12 +97,6 @@ body {
   /* hi-res laptops and desktops */
 }
 
-.visualise {
-  background-image: url('/assets/img/mid_bg.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
 .page_supp {
   background-image: url('/assets/img/page-support.webp');
   background-repeat: no-repeat;
@@ -278,7 +264,4 @@ p{
 .navbar-scrolled .navbar-toggler{
   border-color: #0B0B16;
   color: #0B0B16;
-}
-.formCard.faq {
-  margin-top: 15rem !important;
 }

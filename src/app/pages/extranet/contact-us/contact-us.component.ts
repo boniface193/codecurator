@@ -96,7 +96,7 @@ export class ContactUsComponent implements OnInit {
       `My name is ${name}, and I am reaching out regarding ${message}.`
     );
 
-    window.open(`mailto:codecurator@protonmail.com?subject=${subject}&body=${body}`);
+    window.open(`mailto:support@ututor.co.uk?subject=${subject}&body=${body}`);
   }
 
 

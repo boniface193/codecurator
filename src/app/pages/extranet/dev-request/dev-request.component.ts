@@ -11,7 +11,7 @@ import { BsModalService } from "ngx-bootstrap/modal";
   templateUrl: './dev-request.component.html',
   styleUrls: ['./dev-request.component.css']
 })
-export class DevRequestComponent implements OnInit{
+export class DevRequestComponent implements OnInit {
   form: FormGroup;
   activeSection = "";
   errorMessage: string;
@@ -22,7 +22,7 @@ export class DevRequestComponent implements OnInit{
     private fb: FormBuilder,
     private router: Router,
     private bsModalService: BsModalService
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     this.initForm();
@@ -84,7 +84,7 @@ export class DevRequestComponent implements OnInit{
       this.activeSection = 'contact-us';
     } else if (hash === '#about') {
       this.activeSection = 'about';
-    } else if (url.includes('dev-request')){
+    } else if (url.includes('dev-request')) {
       this.activeSection = 'dev-request'
     }
 
@@ -107,13 +107,10 @@ export class DevRequestComponent implements OnInit{
     this.logoSrc = this.isScrolled ? '/assets/img/logo_dark.svg' : ' /assets/img/logo.svg';
   }
 
-
-
-
-    sendEmail(): void {
-      this.form.markAllAsTouched();
-      if (!this.form.valid) return;
-      this.sending = true;
+  sendEmail(): void {
+    this.form.markAllAsTouched();
+    if (!this.form.valid) return;
+    this.sending = true;
 
     const templateParams = {
       first_name: this.form.get('firstName').value,
@@ -137,7 +134,7 @@ export class DevRequestComponent implements OnInit{
       });
   }
 
-  successModal(){
+  successModal() {
     const bsModalRef = this.bsModalService.show(AlertComponent, {
       initialState: {
         title: 'Success',
@@ -167,6 +164,4 @@ export class DevRequestComponent implements OnInit{
   getErrorMessage(): string {
     return this.errorMessage;
   }
-
-
 }
