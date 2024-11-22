@@ -14,10 +14,10 @@ export const environment = {
   },
   sessionTimeout: 1440,
   defaultCountry: 'NGA',
-  userId: "7vyPjZpGYWLxXaqjn",
-  serviceId: "service_0e70244",
+  userId: "QFESL6QlQNYdpja6Y",
+  serviceId: "service_f2nut9m", 
   applicationRequestTemplateId: "template_36eq4e5",
-  teamRequestTemplateId: "template_enk035p"
+  teamRequestTemplateId: "template_2x16jxl"
 
 };
 

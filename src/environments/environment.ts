@@ -6,14 +6,14 @@ export const environment = {
   production: false,
   apiBaseUrl: '/api',
   siteUrl: 'http://localhost:4281',
-  brandName: 'code-curator',
+  brandName: 'ututor',
   sessionTimeout: 1440,
   defaultCountry: 'NG',
-  userId: "7vyPjZpGYWLxXaqjn",
-  serviceId: "service_0e70244",
+  userId: "QFESL6QlQNYdpja6Y",
+  serviceId: "service_f2nut9m",
   applicationRequestTemplateId: "template_36eq4e5",
-  teamRequestTemplateId: "template_enk035p"
-
+  teamRequestTemplateId: "template_2x16jxl"
+ 
 };
 
 /*
