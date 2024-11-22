@@ -162,6 +162,7 @@ export class DevRequestComponent implements OnInit {
   }
 
   getErrorMessage(): string {
+    console.log(this.errorMessage)
     return this.errorMessage;
   }
 }
