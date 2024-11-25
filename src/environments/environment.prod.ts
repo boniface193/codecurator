@@ -6,7 +6,7 @@ export const environment = {
   sessionTimeout: 1440,
   defaultCountry: 'NGA',
   userId: "QFESL6QlQNYdpja6Y",
-  serviceId: "service_kq9l60o",
+  serviceId: "service_zezijtv",
   applicationRequestTemplateId: "template_36eq4e5",
   teamRequestTemplateId: "template_2x16jxl"
 

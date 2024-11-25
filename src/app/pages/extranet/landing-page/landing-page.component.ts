@@ -61,9 +61,6 @@ export class LandingPageComponent implements OnInit {
   }
 
   topTechnologies: string[] = [
-    'Algebra',
-    'Geometry',
-    'Calculus',
     'Biology',
     'Chemistry',
     'Physics',
@@ -74,7 +71,9 @@ export class LandingPageComponent implements OnInit {
   bottomTechnologies: string[] = [
     'English',
     'Maths',
-    'English',
+    'Physics',
+    'Biology',
+    'Chemistry',
   ];
 
 }

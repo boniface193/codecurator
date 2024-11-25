@@ -54,14 +54,14 @@ h6,
 
 .section_dark_bg {
   /* background-color: #060408; */
-  background-color: #2F3743;
+  background-color: #747983;
 }
 
 @media (min-width: 961px) {
 
   /* tablet, landscape iPad, lo-res laptops ands desktops */
   .section_dark_bg {
-    background-color: #2F3743;
+    background-color: #747983;
     overflow: hidden;
     padding-bottom: 80px;
   }
@@ -386,11 +386,11 @@ p {
 }
 
 .rectangle-12_4-49 {
-  width: 301px;
-  height: 297px;
+  width: 231px;
+  height: 407px;
   display: flex;
   position: absolute;
-  bottom: 21rem;
+  bottom: 19rem;
 }
 
 .group-3_4-44 {
