@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LandingPageComponent } from './pages/extranet/landing-page/landing-page.component';
 import { ContactUsComponent } from "./pages/extranet/contact-us/contact-us.component";
+import { TutorsComponent } from "./pages/extranet/tutors/tutors-us.component";
 import { RequestApplicationComponent } from "./pages/extranet/request-application/request-application.component";
 import { DevRequestComponent } from "./pages/extranet/dev-request/dev-request.component";
 
@@ -21,7 +22,16 @@ const routes: Routes = [
     data: {
       isExtranet: true,
     },
-  }, {
+  },
+  {
+    path: 'tutors',
+    component: TutorsComponent,
+    pathMatch: 'full',
+    data: {
+      isExtranet: true,
+    },
+  },
+  {
     path: 'application-request',
     component: RequestApplicationComponent,
     pathMatch: 'full',
@@ -46,4 +56,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

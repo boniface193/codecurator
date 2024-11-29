@@ -52,6 +52,9 @@ export class LandingPageComponent implements OnInit {
     } else if (hash === '#about') {
       this.activeSection = 'about';
     }
+    else if (url.includes('tutors')) {
+      this.activeSection = 'tutors'
+    }
     else if (url.includes('dev-request')){
       this.activeSection = 'dev-request'
     }

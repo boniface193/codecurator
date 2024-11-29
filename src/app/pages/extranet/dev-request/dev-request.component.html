@@ -19,9 +19,14 @@
                   Contact Us</a>
               </li>
               <li class="nav-item">
+                <a [ngClass]="{'active-extranet': activeSection === 'tutors'}"
+                  class="nav-link px-5 py-1 fw-normal font-family-secondary" routerLink="/tutors">Join Us
+                </a>
+              </li>
+              <li class="nav-item bg-info rounded-pill">
                 <a [ngClass]="{'active-extranet': activeSection === 'dev-request'}"
                   class="nav-link px-5 py-1 fw-normal font-family-secondary" routerLink="/dev-request">
-                  Join Us</a>
+                  Enroll your child</a>
               </li>
             </ul>
             <div class="d-flex">
@@ -130,7 +135,7 @@
         <div class="mt-5 d-flex justify-content-end">
           <button [disabled]="sending" (click)="sendEmail()" class="btn btn-primary px-5"> <ng-container
               *ngIf="sending"><span><span class="iconify"
-                  data-icon="eos-icons:loading"></span></span></ng-container>Apply</button>
+                  data-icon="eos-icons:loading"></span></span></ng-container>submit</button>
         </div>
       </div>
 

@@ -8,6 +8,7 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HTTP_INTERCEPTORS, HttpClient, HttpClientModule } from "@angular/common/http";
 import { ContactUsComponent } from "./pages/extranet/contact-us/contact-us.component";
+import { TutorsComponent } from "./pages/extranet/tutors/tutors-us.component";
 import { RequestApplicationComponent } from './pages/extranet/request-application/request-application.component';
 import { DevRequestComponent } from './pages/extranet/dev-request/dev-request.component';
 import { LottieModule } from "ngx-lottie";
@@ -28,6 +29,7 @@ export function lottiePlayerFactory(): any {
     LandingPageComponent,
     SiteFooterComponent,
     ContactUsComponent,
+    TutorsComponent,
     RequestApplicationComponent,
     DevRequestComponent,
     EmComponent,
