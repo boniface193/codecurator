@@ -68,7 +68,7 @@ h6,
 }
 
 .visualise {
-  background-color: #060408;
+  background-color: #747983;
 }
 
 .page_supp {
@@ -429,8 +429,16 @@ p {
     -5px 4px 40.099998474121094px 0px #0000003f inset;
 }
 
+.rectangle-10_4-41 {
+  width: 421px;
+  height: 617px;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+}
+
 .rectangle-10_4-46 {
-  width: 221px;
+  width: 201px;
   height: 617px;
   display: flex;
   position: absolute;
