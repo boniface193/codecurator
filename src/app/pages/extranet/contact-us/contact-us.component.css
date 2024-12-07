@@ -31,21 +31,22 @@ body {
   color: #272626;
 }
 
-::placeholder{
+::placeholder {
   font-family: var(--font-family-tertiary);
 }
 
-.accordion-header{
+.accordion-header {
   font-family: var(--font-family-tertiary);
 }
 
 .visualise {
-  background-color: #060408;
+  background-color: #747983;
   height: 100vh;
 }
 
 
 @media (min-width: 320px) {
+
   #headerCarousel .carousel-inner {
     height: 75vh;
   }
@@ -53,6 +54,7 @@ body {
   .section_dark_bg {
     background-color: #222131;
   }
+
   .carousel-caption.landing_page {
     position: absolute;
     right: 10%;
@@ -71,6 +73,7 @@ body {
     height: 100% !important;
   }
 }
+
 @media (min-width: 961px) {
   .section_dark_bg {
     background-color: #222131;
@@ -79,6 +82,7 @@ body {
     background-size: contain;
     background-position: right;
   }
+
   .carousel-caption.landing_page {
     position: absolute;
     right: 15%;
@@ -90,9 +94,14 @@ body {
     text-align: center;
   }
 }
-@media (min-width: 1025px) {
-  /* big landscape tablets, laptops, and desktops */
+
+@media (max-width: 950px) {
+  .visualise {
+    background-color: #747983;
+    height: fit-content;
+  }
 }
+
 @media (min-width: 1281px) {
   /* hi-res laptops and desktops */
 }
@@ -103,6 +112,7 @@ body {
   background-size: cover;
   background-position: center;
 }
+
 .dark_brand_color {
   background-color: #222131;
 }
@@ -113,6 +123,7 @@ body {
   font-weight: 400;
   line-height: 1.5625rem;
 }
+
 /* New Css frontier */
 .card_feat {
   border-radius: 0.625rem;
@@ -138,6 +149,7 @@ body {
   opacity: 0.5;
   transition: opacity 0.6s ease;
 }
+
 .carousel-indicators .active {
   box-sizing: content-box;
   flex: 0 1 auto;
@@ -199,25 +211,30 @@ body {
 }
 
 .navbar.navbar-scrolled {
-  background-color: #f5f5f5; /* Set the desired background color for the scrolled state */
-  transition: background-color 0.3s ease-in-out; /* Add a transition effect for a smooth color change */
+  background-color: #f5f5f5;
+  /* Set the desired background color for the scrolled state */
+  transition: background-color 0.3s ease-in-out;
+  /* Add a transition effect for a smooth color change */
 }
 
 .navbar-collapse.show {
   background-color: #FFFFFE !important;
   padding: 1rem;
-  transition: background-color 0.1s ease-in-out; /* Add a transition effect for a smooth color change */
+  transition: background-color 0.1s ease-in-out;
+  /* Add a transition effect for a smooth color change */
   margin-top: 15px;
   border-radius: 4px;
 
 }
 
 .navbar-collapse.show .navbar-nav a.nav-link {
-  color: #000 !important; /* Link color on collapse show */
+  color: #000 !important;
+  /* Link color on collapse show */
 }
 
 .navbar-collapse.show .navbar-nav button.dropdown.btn-outline-light {
-  color: #000 !important; /* Link color on scroll */
+  color: #000 !important;
+  /* Link color on scroll */
 }
 
 .navbar-collapse.show .navbar-nav a.nav-link.active-extranet {
@@ -230,7 +247,7 @@ body {
   border-radius: 40px !important;
 }
 
-p{
+p {
   font-size: 17px !important;
 }
 
@@ -238,11 +255,13 @@ p{
 
 
 .navbar-scrolled .navbar-nav a.nav-link {
-  color: #000000 !important; /* Link color on scroll */
+  color: #000000 !important;
+  /* Link color on scroll */
 }
 
 .navbar-scrolled .navbar-nav button.dropdown.btn-outline-light {
-  color: #000000 !important; /* Link color on scroll */
+  color: #000000 !important;
+  /* Link color on scroll */
 }
 
 .navbar-scrolled .navbar-nav a.nav-link.active-extranet {
@@ -255,13 +274,13 @@ p{
   border-radius: 40px !important;
 }
 
-.navbar-toggler{
-  border-color: rgb(248,249,250);
-  color: rgb(248,249,250) ;
+.navbar-toggler {
+  border-color: rgb(248, 249, 250);
+  color: rgb(248, 249, 250);
 }
 
 
-.navbar-scrolled .navbar-toggler{
+.navbar-scrolled .navbar-toggler {
   border-color: #0B0B16;
   color: #0B0B16;
 }

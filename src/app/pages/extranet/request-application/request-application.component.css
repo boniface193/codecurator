@@ -46,15 +46,15 @@ body {
   height: 100vh;
 }
 
+.section_dark_bg {
+  background-color: #747983;
+}
 
 @media (min-width: 320px) {
   #headerCarousel .carousel-inner {
     height: 75vh;
   }
 
-  .section_dark_bg {
-    background-color: #222131;
-  }
   .carousel-caption.landing_page {
     position: absolute;
     right: 10%;
@@ -110,9 +110,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-.dark_brand_color {
-  background-color: #222131;
 }
 
 .paragraph {

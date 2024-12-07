@@ -40,8 +40,15 @@ body {
 }
 
 .visualise {
-  background-color: #060408;
+  background-color: #747983;
   height: 100vh;
+}
+
+@media (max-width: 950px) {
+  .visualise {
+    background-color: #747983;
+    height: fit-content;
+  }
 }
 
 
